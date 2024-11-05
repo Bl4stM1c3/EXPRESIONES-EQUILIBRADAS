@@ -1,0 +1,22 @@
+#EJERCICIO 11 DE https://retosdeprogramacion.com/ejercicios/
+#Crea un programa que comprueba si los paréntesis, llaves y corchetes
+#  de una expresión están equilibrados.
+#  - Equilibrado significa que estos delimitadores se abren y cieran
+#    en orden y de forma correcta.
+#  - Paréntesis, llaves y corchetes son igual de prioritarios.
+#    No hay uno más importante que otro.
+#  - Expresión balanceada: { [ a * ( c + d ) ] - 5 }
+#  - Expresión no balanceada: { a * ( c + d ) ] - 5 }
+
+
+def expresion_equilibrada(expresion):
+    pares = {'{':'}', '(':')', '[':']'}
+    aperturas = []
+    for caracter in expresion:
+      if caracter in pares.keys():
+        aperturas.append(caracter)
+      elif caracter in pares.values():
+        if not pila or pares[aperturas.pop()] != caracter
+          return f"La expresion {expresion} NO está equilibrada"
+
+    return f"La expresion {expresion} está equilibrada if not aperturas else f"La expresion {expresion} está equilibrada"
